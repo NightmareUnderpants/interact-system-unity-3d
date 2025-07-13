@@ -17,11 +17,12 @@ This system include only Interact process and logic. And a few modest examples. 
 
 ## How it works and how to use
 ### Simple Interact Object
-1. Add [IInteractable.cs](Scripts/Interact System/IInteractable.cs) and [PlayerInteractManager.cs](Scripts/Interact System/PlayerInteractManager.cs) to project.
-2. Create new .cs file and inherit IInteractable.
-3. Implement all methods from IInteractable.
-   ![Example file Interact implement](screenshots/interact example.png)
-5. 
+1. Add [`IInteractable.cs`](/Scripts/Interact%20System/IInteractable.cs) and [`PlayerInteractManager.cs`](/Scripts/Interact%20System/PlayerInteractManager.cs) to project.
+2. Create new .cs file and inherit `IInteractable`.
+3. Implement all methods from `IInteractable`.  
+   ![Example file Interact implement](/screenshots/interact%20example.png)
+4. You can add your ideas in `void Interact()` its method called every time when you are interact with object.
+   - Also you can change InputManager to simple processing via `if (Input.GetKeyDown(KeyCode.F))`.
 
 ### Interact Object
 
