@@ -23,7 +23,7 @@ This system include only Interact process and logic. And a few modest examples. 
    ![Example file Interact implement](/screenshots/interact%20example.png)
 4. You can add your ideas in `void Interact()` its method called every time when you are interact with object and `bool IsInteractable()` returns `True`.
 5. Add this new component to your GameObject
-6. 
+
 > [!WARNING]
 > Don't forget add Colliders component!
 
@@ -33,18 +33,18 @@ This system include only Interact process and logic. And a few modest examples. 
 3. On this step you have 2 options for what to do next.
      - Either, create new .cs file, inherit `InteractObject` and implement you own logic in `override void Interact()`.
      - Or add this component in Inspector to any object.
-     - 
+
 > [!WARNING]
 > Don't forget add RigidBody and Colliders component!
 
 3. Add component in Inspector to your GameObject and set it up.
-    - **Name Object**
+    - **Name Object**  
     write name to your object. Its need to recognize this object when you `Invoke()` actions like `OnObjectPicked<string>`;
-    - **Interact Object State**
+    - **Interact Object State**  
     at 99% of cases you need only `Idle` state. Its can helpfuly for Debugging states of this object and set initial state.
-    - **Is Interact**
+    - **Is Interact**  
     set it `False` if you change _"Interactability"_ that object later.
-    - **Is Static Rotation**
+    - **Is Static Rotation**  
     in this version object can only being in zero local rotation or not change local rotation because of this, the rotation of object is unpredictable.
 
 ### Place Interact Object
